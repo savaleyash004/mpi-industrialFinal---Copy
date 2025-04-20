@@ -1,0 +1,49 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2463" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGradient)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  
+  <!-- Industrial background elements -->
+  <g opacity="0.2" fill="#ffffff">
+    <!-- Factory silhouette -->
+    <polygon points="100,750 100,600 200,600 200,550 300,550 300,600 400,600 400,500 500,500 500,600 600,600 600,650 750,650 750,600 850,600 850,750" />
+    
+    <!-- Machine elements -->
+    <rect x="1200" y="500" width="500" height="300" rx="10" />
+    <rect x="1250" y="550" width="150" height="200" rx="5" />
+    <rect x="1450" y="550" width="200" height="100" rx="5" />
+    <rect x="1450" y="680" width="200" height="70" rx="5" />
+    <circle cx="1325" cy="650" r="50" />
+    <circle cx="1325" cy="650" r="20" fill="#0a2463" />
+    
+    <!-- Gears -->
+    <g transform="translate(950, 450)">
+      <circle cx="0" cy="0" r="80" stroke="#ffffff" stroke-width="5" fill="none" />
+      <circle cx="0" cy="0" r="60" stroke="#ffffff" stroke-width="5" fill="none" />
+      <circle cx="0" cy="0" r="20" fill="#ffffff" />
+      
+      <!-- Gear teeth -->
+      <g stroke="#ffffff" stroke-width="5">
+        <line x1="0" y1="-80" x2="0" y2="-100" />
+        <line x1="57" y1="-57" x2="71" y2="-71" />
+        <line x1="80" y1="0" x2="100" y2="0" />
+        <line x1="57" y1="57" x2="71" y2="71" />
+        <line x1="0" y1="80" x2="0" y2="100" />
+        <line x1="-57" y1="57" x2="-71" y2="71" />
+        <line x1="-80" y1="0" x2="-100" y2="0" />
+        <line x1="-57" y1="-57" x2="-71" y2="-71" />
+      </g>
+    </g>
+  </g>
+  
+</svg> 

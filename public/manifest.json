@@ -1,0 +1,15 @@
+{
+  "short_name": "Hymech NDT",
+  "name": "Hymech NDT Equipments",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1E2A38",
+  "background_color": "#F4F5F7"
+} 

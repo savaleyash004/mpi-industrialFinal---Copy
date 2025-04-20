@@ -1,0 +1,104 @@
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="300" fill="url(#bgGradient)" rx="10" />
+  
+  <!-- Timeline line -->
+  <line x1="50" y1="150" x2="750" y2="150" stroke="#94a3b8" stroke-width="4" stroke-dasharray="2" />
+  
+  <!-- Timeline points and labels -->
+  <!-- 1985: Company Founded -->
+  <g transform="translate(100, 150)">
+    <circle cx="0" cy="0" r="15" fill="url(#accentGradient)" />
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">1985</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Company</text>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Founded</text>
+    
+    <!-- Arrow to content -->
+    <line x1="0" y1="-20" x2="0" y2="-40" stroke="#94a3b8" stroke-width="2" />
+    <rect x="-60" y="-100" width="120" height="60" rx="5" fill="#fff" stroke="#cbd5e1" stroke-width="1" />
+    <text x="0" y="-75" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Hymech NDT Equipments</text>
+    <text x="0" y="-60" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">was established focusing</text>
+    <text x="0" y="-45" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">on quality inspection</text>
+  </g>
+  
+  <!-- 1992: First MPI Machine -->
+  <g transform="translate(225, 150)">
+    <circle cx="0" cy="0" r="15" fill="url(#accentGradient)" />
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">1992</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">First MPI</text>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Machine</text>
+    
+    <!-- Mini machine icon -->
+    <rect x="-15" y="-90" width="30" height="25" rx="2" fill="#94a3b8" />
+    <rect x="-10" y="-85" width="20" height="15" rx="1" fill="#334155" />
+  </g>
+  
+  <!-- 2003: ISO Certification -->
+  <g transform="translate(350, 150)">
+    <circle cx="0" cy="0" r="15" fill="url(#accentGradient)" />
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">2003</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">ISO</text>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Certification</text>
+    
+    <!-- Certificate icon -->
+    <rect x="-20" y="-90" width="40" height="30" rx="2" fill="#fff" stroke="#94a3b8" stroke-width="1" />
+    <text x="0" y="-70" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">ISO</text>
+    <line x1="-15" y1="-80" x2="15" y2="-80" stroke="#94a3b8" stroke-width="1" />
+    <line x1="-15" y1="-75" x2="15" y2="-75" stroke="#94a3b8" stroke-width="1" />
+  </g>
+  
+  <!-- 2010: Global Expansion -->
+  <g transform="translate(475, 150)">
+    <circle cx="0" cy="0" r="15" fill="url(#accentGradient)" />
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">2010</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Global</text>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Expansion</text>
+    
+    <!-- Globe icon (simplified) -->
+    <circle cx="0" cy="-75" r="20" fill="#fff" stroke="#94a3b8" stroke-width="1" />
+    <ellipse cx="0" cy="-75" rx="20" ry="8" fill="none" stroke="#94a3b8" stroke-width="1" />
+    <line x1="-20" y1="-75" x2="20" y2="-75" stroke="#94a3b8" stroke-width="1" />
+    <line x1="0" y1="-95" x2="0" y2="-55" stroke="#94a3b8" stroke-width="1" />
+  </g>
+  
+  <!-- 2018: Advanced R&D Center -->
+  <g transform="translate(600, 150)">
+    <circle cx="0" cy="0" r="15" fill="url(#accentGradient)" />
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">2018</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">R&D</text>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Center</text>
+    
+    <!-- Lab flask icon -->
+    <path d="M -5,-95 L -5,-85 L -15,-65 C -17,-60 -17,-55 -10,-55 L 10,-55 C 17,-55 17,-60 15,-65 L 5,-85 L 5,-95 Z" fill="#fff" stroke="#94a3b8" stroke-width="1" />
+    <path d="M -10,-70 L 10,-70" stroke="#94a3b8" stroke-width="1" />
+  </g>
+  
+  <!-- 2023: Industry 4.0 Integration -->
+  <g transform="translate(725, 150)">
+    <circle cx="0" cy="0" r="15" fill="url(#accentGradient)" />
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">2023</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Industry 4.0</text>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Integration</text>
+    
+    <!-- Connected devices icon -->
+    <rect x="-15" y="-85" width="10" height="15" rx="1" fill="#fff" stroke="#94a3b8" stroke-width="1" />
+    <rect x="-25" y="-70" width="20" height="10" rx="1" fill="#fff" stroke="#94a3b8" stroke-width="1" />
+    <rect x="5" y="-80" width="15" height="20" rx="1" fill="#fff" stroke="#94a3b8" stroke-width="1" />
+    <line x1="-10" y1="-77" x2="5" y2="-70" stroke="#94a3b8" stroke-width="1" />
+    <line x1="-15" y1="-65" x2="5" y2="-65" stroke="#94a3b8" stroke-width="1" />
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e3a8a">Hymech NDT Equipments - Company History</text>
+</svg> 
