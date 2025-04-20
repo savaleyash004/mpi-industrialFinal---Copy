@@ -240,7 +240,7 @@ const ProductsPage: React.FC = () => {
     if (newCategory === "all") {
       navigate("/products");
     } else {
-      navigate(`/products/₹{newCategory}`);
+      navigate(`/products/${newCategory}`);
     }
   };
 
@@ -248,14 +248,14 @@ const ProductsPage: React.FC = () => {
   const getImagePath = (path: string) => {
     // Ensure the path starts with the correct prefix
     if (!path.startsWith('/')) {
-      return `/₹{path}`;
+      return `/${path}`;
     }
     return path;
   };
 
   // Handle image loading errors
   const handleImageError = (imagePath: string) => {
-    console.error(`Error loading image: ₹{imagePath}`);
+    console.error(`Error loading image: ${imagePath}`);
     setImageErrors(prev => ({ ...prev, [imagePath]: true }));
   };
 
@@ -312,14 +312,14 @@ const ProductsPage: React.FC = () => {
                   setActiveDemo(type.id);
                   handleCategoryChange(type.id);
                 }}
-                className={`p-4 rounded-lg text-left transition-all ₹{
+                className={`p-4 rounded-lg text-left transition-all ${
                   activeDemo === type.id 
                     ? "bg-primary text-white shadow-md" 
                     : "bg-white hover:bg-gray-50 border border-gray-200"
                 }`}
               >
                 <h3 className="text-xl font-bold mb-2">{type.name}</h3>
-                <p className={`text-sm ₹{activeDemo === type.id ? "text-white/80" : "text-gray-600"}`}>
+                <p className={`text-sm ${activeDemo === type.id ? "text-white/80" : "text-gray-600"}`}>
                   {type.description.substring(0, 100)}...
                 </p>
               </button>
@@ -350,7 +350,7 @@ const ProductsPage: React.FC = () => {
                               // Try to load the fallback image
                               const fallbackPath = getFallbackImage(activeDemoDetails.id);
                               if (fallbackPath !== activeDemoDetails.image) {
-                                const imgElement = document.querySelector(`img[src="₹{activeDemoDetails.image}"]`) as HTMLImageElement;
+                                const imgElement = document.querySelector(`img[src="${activeDemoDetails.image}"]`) as HTMLImageElement;
                                 if (imgElement) {
                                   imgElement.src = fallbackPath;
                                 }
@@ -614,7 +614,7 @@ const ProductsPage: React.FC = () => {
                               // Try to load the fallback image
                               const fallbackPath = getFallbackImage(product.category);
                               if (fallbackPath !== product.image) {
-                                const imgElement = document.querySelector(`img[src="₹{product.image}"]`) as HTMLImageElement;
+                                const imgElement = document.querySelector(`img[src="${product.image}"]`) as HTMLImageElement;
                                 if (imgElement) {
                                   imgElement.src = fallbackPath;
                                 }

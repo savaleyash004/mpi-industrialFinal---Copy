@@ -184,7 +184,7 @@ const CaseStudiesPage = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
               >
-                <div className={`space-y-6 ₹{index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                   <div className="flex items-center gap-3 mb-2">
                     <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
                       {study.icon}
@@ -223,7 +223,7 @@ const CaseStudiesPage = () => {
                   </div>
                 </div>
                 
-                <div className={`relative aspect-[4/3] rounded-lg overflow-hidden bg-gray-100 ₹{index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                <div className={`relative aspect-[4/3] rounded-lg overflow-hidden bg-gray-100 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   {study.industry === "Automotive" && (
                     <img 
                       src="/assets/images/case-studies/automotive.jpg" 

@@ -138,21 +138,21 @@ const ContactPage = () => {
 
               <motion.div variants={fadeIn}>
                 <div className="tabs-container">
-                  <div className="tabs-list grid grid-cols-3 mb-6">
+                  <div className="tabs-list grid grid-cols-3 mb-6"> 
                     <button 
-                      className={`py-2 ₹{activeTab === 'quote' ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
+                      className={`py-2 ${activeTab === 'quote' ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
                       onClick={() => setActiveTab('quote')}
                     >
                       Quote Request
                     </button>
                     <button 
-                      className={`py-2 ₹{activeTab === 'support' ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
+                      className={`py-2 ${activeTab === 'support' ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
                       onClick={() => setActiveTab('support')}
                     >
                       Technical Support
                     </button>
                     <button 
-                      className={`py-2 ₹{activeTab === 'demo' ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
+                      className={`py-2 ${activeTab === 'demo' ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
                       onClick={() => setActiveTab('demo')}
                     >
                       Demo Request
